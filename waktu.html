@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waktu Mundur</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.Button {
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#mulai {
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #0e0d0d;
+    font-weight: bold;
+}
+
+button {
+    background-color: #1e5e07;
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    width: 150%;
+}
+
+span{
+    color: red;
+    font-size: 30px;
+}
+
+.Button-bawah{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+</style>
+  
+<body>
+<div class="Button">
+    <h3>Hitung Mundur</h3>
+    <div id="mulai"> 10 </div>
+  <div class="Button-bawah">
+    <button id="start-button">Mulai</button>
+    <button id="stop-button">Berhenti</button>
+  </div>
+</div>
+    
+    
+<script>
+let waktuInterval;
+let waktu = 10; 
+    
+    function mulaiWaktu() {
+      waktuInterval = setInterval(() => {
+        document.getElementById("start-button").disabled = true;
+        document.getElementById("stop-button").disabled = false;
+        waktu--;
+        document.getElementById("mulai").innerHTML = ` ${waktu}`;
+        if (waktu <= 0) {
+          clearInterval(waktuInterval);
+          document.getElementById("mulai").innerHTML = "<span>Waktu Habis</span>";
+        }
+      }, 1000); 
+    }
+    
+    function berhentiWaktu() {
+      clearInterval(waktuInterval);
+      document.getElementById("start-button").disabled = false;
+      document.getElementById("stop-button").disabled = true;
+      document.getElementById("mulai").innerHTML = ` ${waktu}  `;
+    }
+    
+    document.getElementById("start-button").addEventListener("click", mulaiWaktu);
+    document.getElementById("stop-button").addEventListener("click", berhentiWaktu);
+</script>
+
+</body>
+
+</html>

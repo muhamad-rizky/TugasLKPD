@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belanja Online</title>
+    <script src="https://kit.fontawesome.com/66b535d0db.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar .menu li {
+            margin: 0 15px;
+        }
+
+        .navbar .menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px;
+            margin: 10px;
+            max-width: 30%;
+            box-sizing: border-box;
+        }
+
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-item h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .product-item p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .product-item .price {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .product-item .buy-btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .product-item .buy-btn:hover {
+            background-color: #555;
+        }
+        
+        @media (max-width:768px) {
+            .navbar .menu {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo"><i class="fa-solid fa-cart-shopping"></i>Shop Cat</div>
+        <ul class="menu">
+            <li><a href="https://shopee.co.id/handreazcathouse?categoryId=100631&entryPoint=ShopByPDP&itemId=23779848058&upstream=search">Home</a></li>
+            <li><a href="https://shopee.co.id/handreazcathouse#product_list">Produk</a></li>
+            <li><a href="">Tentang Kami</a></li>
+            <li><a href="">Kontak</a></li>
+        </ul>
+    </div>
+    <div class="products">
+        <div class="product-item">
+            <img src="img/OIP.jpeg" alt="Produk 1">
+            <h3>Himalaya Kitten</h3>
+            <p>Berbelanja Pertama Akan Mendapatkan Diskon Produk</p>
+            <p></p>Total Pembeli: 8rb<i class="fa-solid fa-cart-shopping"></i>
+            <p></p>Menyukai Produk: 5rb<i class="fa-solid fa-heart"></i>
+            <div class="price">Rp 500.000</div>
+            <a href="https://www.instagram.com/artzimarpet.id/" class="buy-btn">Beli Sekarang</a>
+        </div>
+        <div class="product-item">
+            <img src="img/img2.jpeg" alt="Produk 2">
+            <h3>Kitten persia</h3>
+            <p>Berbelanja Pertama Akan Mendapatkan Diskon Produk.</p>
+            <p></p>Total Pembeli: 8rb<i class="fa-solid fa-cart-shopping"></i>
+            <p></p>Menyukai Produk: 5rb<i class="fa-solid fa-heart"></i>
+            <div class="price">Rp 800.000</div>
+            <a href="https://www.instagram.com/artzimarpet.id/" class="buy-btn">Beli Sekarang</a>
+        </div>
+        <div class="product-item">
+            <img src="img/3.webp" alt="Produk 3">
+            <h3>Anggora</h3>
+            <p>Berbelanja Pertama Akan Mendapatkan Diskon Produk.</p>
+            <p></p>Total Pembeli: 8rb<i class="fa-solid fa-cart-shopping"></i>
+            <p></p>Menyukai Produk: 5rb<i class="fa-solid fa-heart"></i>
+            <div class="price">Rp 400.000</div>
+            <a href="https://www.instagram.com/artzimarpet.id/" class="buy-btn">Beli Sekarang</a>
+        </div>
+    </div>
+
+</body>
+</html>
