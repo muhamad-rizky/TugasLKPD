@@ -5,37 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        .container{
+            justify-content: center;
             display: flex;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            margin: 0;
+            margin: auto;
+            position: relative;
+        }
+        body {
+
+        }
+        .Card{
+            justify-content: start;
+            padding: 25px;
+            border: 3px solid black;
+            position: relative;
+            border-radius: 15%;
+            left: 8em;
+            
+        }
+    
+        .Card2{
+            justify-content: end;
+            position: relative;
+            left: 28em;
+            border: 3px solid black;
+            border-radius: 15%;
+            top: 10em;
+            padding: 25px;
+        }
+    
+        .Card3{
+            right: 53em;
+            position: relative;
+            top: 26em;
+            border: 3px solid black;
+            border-radius: 15%;
+            padding: 25px;
+        
         }
 
-        .Card, .Card2, .Card3 {
-            background-color: #fff;
-            border: 2px solid black;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 10px 0;
-            width: 80%;
-            max-width: 400px;
-            text-align: center;
-        }
-
-        .Card h1, .Card2 h1, .Card3 h1 {
-            margin-top: 0;
-        }
-
-        .Card2 {
-            padding-left: 10px;
+        .button {
+          justify-content: center;
+          position: relative;
+          top: 40em;
+          right: 45em;
+          border-radius: 25px;
         }
     </style>
 </head>
 <body>
+<div class="container">
     <div class="Card">
         <h1>Masa Pendaftaran</h1>
         <p>Mari kita mendaftarkan diri untuk Indonesia maju</p>
@@ -50,8 +69,7 @@
         <h1>Pengumuman</h1>
         <p>Mari kita mendaftarkan diri untuk Indonesia maju</p>
     </div> 
-    <button>
-        daftar
-    </button>
+</dir>
+<button class="button">Default</button>
 </body>
 </html>
